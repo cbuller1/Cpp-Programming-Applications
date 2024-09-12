@@ -27,9 +27,7 @@ class Roster {
         int daysInCourse3, 
         DegreeProgram degreeProgram
         );
-
-    private:
-    Student* classRosterArray[7,5];
+        Student* classRosterArray[5];
 };
 
 #endif
