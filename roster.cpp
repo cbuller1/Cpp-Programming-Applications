@@ -11,7 +11,6 @@ void Roster::add(std::string studentID, std::string firstName, std::string lastN
         }
     }
 }
-
 void Roster::remove(std::string studentID) {
     for (int i = 0; i < 5; i++) {
         if (classRosterArray[i]->accessStudentID() == studentID && classRosterArray[i] != 0) {
