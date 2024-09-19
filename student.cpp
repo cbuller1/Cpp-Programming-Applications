@@ -3,16 +3,14 @@
 #include "degree.h"
 #include <iostream>
 
-using namespace std; // used this so I didnt have to type "std" over & over
-
  // my accessors
     int accessAge();
     int accessDaystoComplete();
-    string Student::accessStudentID() {return studentID;}
-    string Student::accessFirstName() {return firstName;}
-    string Student::accessLastName() {return lastName;}
-    string Student::accessEmailAddress() {return emailAddress;}
-    DegreeProgram Student::accessDegreeProgram() {return studentdegreeProgram;}
+    std::string Student::accessStudentID() {return studentID;}
+    std::string Student::accessFirstName() {return firstName;}
+    std::string Student::accessLastName() {return lastName;}
+    std::string Student::accessEmailAddress() {return emailAddress;}
+    DegreeProgram Student::accessDegreeProgram() {return degreeProgram;}
     int accesstotalDaysInCourse(int Course1, int Course2, int Course3);
 
     // mutators
@@ -25,12 +23,12 @@ using namespace std; // used this so I didnt have to type "std" over & over
     void settotalDaysInCourse(int Course1, int Course2, int Course3);
 
     void Student::printInfo() {
-        cout << "StudentID " <<studentID << "/n";
-        cout << "Last Name: " << lastName << "/n";
-        cout << "First Name: " << firstName << "/n";
-        cout << "Days in Course: " << totalDaysInCourse << "/n";
-        cout << "Email Adddress: " << emailAddress << "/n";
-        cout << "Days to Complete: " << daystoComplete << "/n";
-        cout << "Age: " << age << "/n";
+        std::cout << "StudentID " << studentID << "/n";
+        std::cout << "Last Name: " << lastName << "/n";
+        std::cout << "First Name: " << firstName << "/n";
+        std::cout << "Days in Course: " << daysInCourse << "/n";
+        std::cout << "Email Adddress: " << emailAddress << "/n";
+        std::cout << "Days to Complete: " << daysToComplete << "/n";
+        std::cout << "Age: " << age << "/n";
 
     }
